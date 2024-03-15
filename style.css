@@ -2,6 +2,10 @@
     font-family: "Braile";
     src: url(fonts/BRAILLE.ttf);
 }
+@font-face {
+    font-family: "Roboto";
+    src: url(fonts/Roboto-Black.ttf);
+}
 
 *{
     margin: 0px;
@@ -12,6 +16,7 @@ h1{
     padding: 50px;
     display: flex;
     justify-content: center;
+    font-family: "Roboto";
 }
 
 form{
@@ -27,7 +32,7 @@ form{
 header{
     image-rendering: pixelated;
     padding: 50px;
-    margin-top: 200px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,9 +43,16 @@ header{
 
 #tabela{
     position: relative;
-    width: 80%;
+    width: 500px;
     left: 50%;
     transform: translate(-50%);
-    margin: 120px 0px;
+    margin: 20px 0px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar{
+    background-color: rgb(166, 166, 166);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #BB2D3B;
+    border-radius: 20px;
 }
